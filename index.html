@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="main">
+    <header class="details">
+        <h1>Client Details</h1>
+        <p>Enter the details of all incoming clients. </p>
+    </header>
+    <div class="client_form">
+        <form action="">
+            <div class="row">
+                <div class="col1">
+                    <label for="cname">Client Name <span>*</span> </label>
+                </div>
+                <div class="col2">
+                    <input type="text" id="cname" name="clientname"  minlength="5" maxlength="50" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <label for="Company">Company<span>*</span></label>
+                </div>
+                <div class="col2">
+                    <input type="text" id="company" name="company" minlength="5" maxlength="50" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <label for="dept">Department<span>*</span></label>
+                </div>
+                <div class="col2">
+                    <select id="dept" name="department" required>
+                        <option value="select">-Select-<option>
+                        <option value="select">HR<option>
+                        <option value="select">TR<option>
+                        <option value="select">MD<option>
+                            
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <label for="contact">Preferred contact method<span>*</span></label>
+                </div>
+                <div class="col2">
+                    <input type="radio" class="Btn1" required>
+                    <label for="">Email</label>
+                    <input type="radio" class="Btn2" required>
+                    <label for="">Phone</label>
+                </div>
+            </div>
+            <div class="row1">
+                <div class="col3">
+                    <label for="">Company address <span>*</span></label>
+                </div>
+                <div class="col4">
+                    <input type="text" id="address" name="caddress" required>
+                    <div class="content">Street Address</div>
+                    <div class="address">
+                        <input type="text" id="addressline1" required>
+                    </div>
+                    <div class="content">Address Line2</div>
+                    <div class="place">
+                        <div class="city">
+                            <input type="text" required>
+                            <div class="content">City</div>
+                        </div>
+                        <div class="city">
+                            <input type="text" required>
+                            <div class="content">State/Region/Province</div>
+                        </div>
+                    </div>
+                    <div class="place">
+                        <div class="city">
+                            <input type="text" pattern="\d{6}" required>
+                            <div class="content">Postal/Zip Code</div>
+                        </div>
+                        <div class="city">
+                            <select name="" id="" class="sel2">
+                                <option value="">-Select-</option>
+                                <option value="">India</option>
+                                <option value="">USA</option>
+                                <option value="">Australia</option>
+                            </select>
+                            <div class="content">Country</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <label for="website">Company website <span>*</span></label>
+                </div>
+                <div class="col2 website">
+                    <input type="url" required>
+                </div> 
+            </div>
+            <div class="row1">
+                <div class="col3">
+                    <label for="logo">Company logo</label>
+                </div>
+                <div class="col5">
+                    <input type="text" placeholder="Choose File" class="logo" required>
+                    <div class="up-icon">
+                        <img src="./upload icon.svg" alt="">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row1">
+                <div class="col3">
+                    <label for="">Billing Cycle <span>*</span></label>
+                </div>
+                <div class="bill">
+                    <div class="icon"><input type="text" id="billing" required><i class="fa-solid fa-calendar-days cal"></i></div>
+                    <div class="content">dd-MMM-yyyy</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <label for="add_info">Additional Information <span>*</span></label>
+                </div>
+                <div class="column">
+                    <textarea name="" id="txt" cols="36" rows="5" required maxlength="200"></textarea>
+                </div>
+            </div>
+            <div class="Btn">
+                <button>Submit</button>
+            </div>
+
+
+        </form>
+
+
+    </div>
+</div>
+</body>
+
+</html>

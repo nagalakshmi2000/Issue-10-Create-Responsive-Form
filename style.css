@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto Slab', serif;
+     background-color: #3D4347;
+}
+.main{
+    width:650px;
+    margin: auto;
+}
+form{
+    background:white;
+
+}
+.details{
+    background-color: #40608E;
+    color:#FFFFFF;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.details h1{
+    font-size: 4em;
+}
+.details p{
+    font-size: 1.5em;
+}
+.row{
+    display:flex;
+    width:100%;
+    padding-top: 2em;
+}
+.row1{
+    display:flex;
+    margin: 2em 0em;
+    width:100%;
+}
+.col1,.col3{
+    width:40%;
+    margin-left: 1em;
+    font-size: 1.2em;
+}
+.col2{
+    width:50%;
+}
+.col4,.col5{
+    width:56%;
+}
+input{
+    width:85%;
+    padding:10px;
+}
+select{
+    font-weight:bold;
+    color: rgb(54, 46, 46);
+    font-size: 1em;
+    width:85%;
+    padding: 10px;
+}
+span{
+    color: red;
+}
+.Btn1,.Btn2{
+    width:5%;
+}
+.Btn2{
+    margin-left: 1.5%;
+}
+.content{
+    color:#BABABA;
+    margin-bottom: 1.5em;
+    font-size: 12px;
+}
+.logo{
+    border: 2px dashed #bab9b9;
+    padding: 2em 10px;
+    width:85%;
+}
+.place{
+    width:100%;
+    display: flex;
+}
+.city{
+    width:46%;
+}
+/* textarea{
+    padding: 0 17%;
+} */
+.bill{
+    width:28%;
+}
+.icon{
+    display: flex;
+}
+button{
+  padding: 1% 2%;
+  background-color: #4C96E0;
+  color: #DAEBFA;
+  margin: 4em 0em;
+}
+.Btn{
+  text-align: center;
+}
+.cal{
+    color: red; 
+    padding: 10px;
+}
+.col5{
+    position: relative;
+    width:56%;
+    display: flex;
+}
+.up-icon{
+    position: absolute;
+    right:4em;
+    top: 18px; 
+    padding: 8px 10px;
+    border-radius: 50%;
+    background-color: #4C96E0;
+}
+.up-icon img{
+    width: 20px;
+}
+/* mobile */
+@media(min-width:300px) and (max-width:500px) {
+    header{
+        font-size:10px ;
+    }
+    .main{
+        background-color: none;
+        width: auto; 
+    }
+    .row,.row1{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .Btn2{
+        margin-left:8%;
+    }
+    .col1,.col2{
+        width:100%;
+    }
+    .col2,.col4,.col3,.bill,.column,.col5{
+        margin:1em 0em 1em 1em ;
+    }
+    .icon{
+        width:94%;
+    }
+    .col4,.col3,.bill,.col5{
+        width:100%;
+    }
+    /* .logo{
+        width:90%;
+    } */
+    .place{
+        display: block;
+    }
+    .city{
+        width:100%;
+    }
+    button{
+        margin: 2em 0;
+    }
+    /* .up-icon{
+        right:3em;
+    } */
+    input{
+        padding:8px;
+    }
+
+    body{
+        background:none;
+    }
+    .logo{
+        width:85%;
+    }
+    .up-icon{
+        right:5em;
+    }
+    textarea{
+        width: 85%;
+    }
+}
