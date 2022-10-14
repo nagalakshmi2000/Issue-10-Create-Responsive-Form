@@ -14,7 +14,6 @@ body{
 }
 form{
     background:white;
-
 }
 .details{
     background-color: #40608E;
@@ -63,14 +62,11 @@ select{
 span{
     color: red;
 }
-.Btn1,.Btn2{
+#Btn{
     width:5%;
 }
-.Btn2{
-    margin-left: 1.5%;
-}
 .content{
-    color:#BABABA;
+    color:#d1cccc;
     margin-bottom: 1.5em;
     font-size: 12px;
 }
@@ -86,9 +82,6 @@ span{
 .city{
     width:46%;
 }
-/* textarea{
-    padding: 0 17%;
-} */
 .bill{
     width:28%;
 }
@@ -101,7 +94,7 @@ button{
   color: #DAEBFA;
   margin: 4em 0em;
 }
-.Btn{
+.Bton{
   text-align: center;
 }
 .cal{
@@ -129,59 +122,55 @@ button{
     header{
         font-size:10px ;
     }
+    body{
+        background:none;
+        width: auto;
+    }
+    .city,.row,.row1,.col1,.col2,.col4,.col3,.bill,.col5{
+        width:100%;
+    }
     .main{
         background-color: none;
         width: auto; 
     }
     .row,.row1{
-        width:100%;
         display: flex;
         flex-direction: column;
     }
-    .Btn2{
+    /* .Btn2{
         margin-left:8%;
-    }
-    .col1,.col2{
+    } */
+    /* .col1,.col2{
         width:100%;
-    }
+    } */
     .col2,.col4,.col3,.bill,.column,.col5{
         margin:1em 0em 1em 1em ;
     }
     .icon{
         width:94%;
     }
-    .col4,.col3,.bill,.col5{
+    /* .col4,.col3,.bill,.col5{
         width:100%;
-    }
-    /* .logo{
-        width:90%;
     } */
     .place{
         display: block;
     }
-    .city{
+    /* .city{
         width:100%;
-    }
+    } */
     button{
         margin: 2em 0;
     }
-    /* .up-icon{
-        right:3em;
-    } */
     input{
         padding:8px;
     }
-
-    body{
-        background:none;
-    }
-    .logo{
+    .logo,textarea{
         width:85%;
     }
     .up-icon{
         right:5em;
     }
-    textarea{
+    /* textarea{
         width: 85%;
-    }
+    } */
 }

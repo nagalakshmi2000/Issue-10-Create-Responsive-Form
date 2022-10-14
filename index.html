@@ -55,9 +55,9 @@
                     <label for="contact">Preferred contact method<span>*</span></label>
                 </div>
                 <div class="col2">
-                    <input type="radio" class="Btn1" required>
+                    <input type="radio" id="Btn" name="email" required>
                     <label for="">Email</label>
-                    <input type="radio" class="Btn2" required>
+                    <input type="radio" id="Btn" name="email"  required>
                     <label for="">Phone</label>
                 </div>
             </div>
@@ -97,7 +97,6 @@
                             <div class="content">Country</div>
                         </div>
                     </div>
-
                 </div>
             </div>
             <div class="row">
@@ -113,7 +112,7 @@
                     <label for="logo">Company logo</label>
                 </div>
                 <div class="col5">
-                    <input type="text" placeholder="Choose File" class="logo" required>
+                    <input type="text" placeholder="Choose File" class="logo">
                     <div class="up-icon">
                         <img src="./upload icon.svg" alt="">
                     </div>
@@ -125,7 +124,7 @@
                     <label for="">Billing Cycle <span>*</span></label>
                 </div>
                 <div class="bill">
-                    <div class="icon"><input type="text" id="billing" required><i class="fa-solid fa-calendar-days cal"></i></div>
+                    <div class="icon"><input type="text" id="billing" required  pattern="^(0?[1-9]|[12][0-9]|3[01])[\-](0?[1-9]|1[012])[\-]\d{4}$"><i class="fa-solid fa-calendar-days cal"></i></div>
                     <div class="content">dd-MMM-yyyy</div>
                 </div>
             </div>
@@ -137,7 +136,7 @@
                     <textarea name="" id="txt" cols="36" rows="5" required maxlength="200"></textarea>
                 </div>
             </div>
-            <div class="Btn">
+            <div class="Bton">
                 <button>Submit</button>
             </div>
 
